@@ -4,6 +4,9 @@ import {createBrowserRouter, createRoutesFromElements, Route, RouterProvider} fr
 
 import './index.css';
 import IndexPage from "./pages/IndexPage";
+import {FavoritesProvider} from "./context/FavoritesContext";
+import {AuthProvider} from "./context/AuthContext";
+import {CartProvider} from "./context/CartContext";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,6 +21,12 @@ const router = createBrowserRouter(
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <RouterProvider router={router}/>
+        <AuthProvider>
+            <FavoritesProvider>
+                <CartProvider>
+                    <RouterProvider router={router}/>
+                </CartProvider>
+            </FavoritesProvider>
+        </AuthProvider>
     </React.StrictMode>
 );

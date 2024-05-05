@@ -1,0 +1,58 @@
+.AddToCartButton {
+    background: white;
+    border: 1px solid #cccccc;
+    font-size: 14px;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    padding: 5px 10px;
+
+}
+
+.AddToCartButton:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.AddToCartButton:active,
+.AddToCartButton:focus {
+    background-color: #e0e0e0;
+    outline: none;
+}
+
+
+.FavButton {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 30px;
+    align-items: center;
+    height: 30px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.FavButton:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.FavButton:active,
+.FavButton:focus {
+    background-color: #e0e0e0;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.favLogoLiked {
+    color: red
+}

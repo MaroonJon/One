@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container>div {
+    width: calc(calc(100% / 4) - 20px);
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container>div {
+        width: 100%;
+        margin: 10px;
+    }
+}
