@@ -7,6 +7,7 @@ import IndexPage from "./pages/IndexPage";
 import {FavoritesProvider} from "./context/FavoritesContext";
 import {AuthProvider} from "./context/AuthContext";
 import {CartProvider} from "./context/CartContext";
+import ProductsPage from "./pages/ProductsPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -14,6 +15,10 @@ const router = createBrowserRouter(
             <Route
                 element={<IndexPage/>}
                 path="/"
+            />
+            <Route
+                element={<ProductsPage/>}
+                path="/products"
             />
         </>
     ));
