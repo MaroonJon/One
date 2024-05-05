@@ -16,6 +16,8 @@ import AboutUsPage from "./pages/AboutUsPage";
 import ContactPage from "./pages/ContactPage";
 import LoginPage from "./pages/Login";
 import SignupPage from "./pages/SignupPage";
+import {ProtectedRoute} from "./ProtectedRoute";
+import ProfilePage from "./pages/ProtectedRoutes/ProfilePage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -59,6 +61,14 @@ const router = createBrowserRouter(
             <Route
                 element={<SignupPage/>}
                 path="/signup"
+            />
+            <Route
+                path="/profile"
+                element={
+                    <ProtectedRoute>
+                        <ProfilePage/>
+                    </ProtectedRoute>
+                }
             />
         </>
     ));
