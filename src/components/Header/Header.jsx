@@ -6,9 +6,14 @@ import { TiThMenu } from "react-icons/ti";
 import { LuShoppingCart } from "react-icons/lu";
 import { GrClose } from "react-icons/gr";
 
+import { useCart } from '../../context/CartContext';
+
 import styles from './Header.module.css';
+import { useAuth } from '../../context/AuthContext';
 
 const Header = ({ isHomePage = false }) => {
+    const { cart } = useCart();
+    const { user } = useAuth();
     const navigate = useNavigate();
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [searchText, setSearchText] = useState('')
@@ -44,6 +49,7 @@ const Header = ({ isHomePage = false }) => {
 
             <div className={styles.shoppingCartLogo}>
                 <a href={'/cart'}>
+                    <span className={styles.shoppingCartCount}>{cart.length}</span>
                     <LuShoppingCart size={25} />
                 </a>
             </div>
@@ -61,6 +67,17 @@ const Header = ({ isHomePage = false }) => {
                     <li><a href="/products">Products</a></li>
                     <li><a href="/contact">Contact</a></li>
                     <li><a href="/about-us">About us</a></li>
+                    {!user?.token && (
+                        <>
+                            <li><a href="/signup">Signup</a></li>
+                            <li><a href="/login">Login</a></li>
+                        </>
+                    )}
+                    {user?.token && (
+                        <>
+                            <li><a href="/profile">Profile</a></li>
+                        </>
+                    )}
                 </ul>
             </div>
         </div>
