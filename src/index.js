@@ -9,6 +9,7 @@ import {AuthProvider} from "./context/AuthContext";
 import {CartProvider} from "./context/CartContext";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
+import SearchPage from "./pages/SearchPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -24,6 +25,10 @@ const router = createBrowserRouter(
             <Route
                 element={<ProductPage/>}
                 path="/product/:id"
+            />
+            <Route
+                element={<SearchPage/>}
+                path="/search/:keyword"
             />
         </>
     ));
