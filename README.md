@@ -48,7 +48,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm run build`
+### Backend
 
 One online shop uses our NoviBackend as a backend service for user signup and login and, we are using this `'X-Api-Key': 'one:tyofBDI1NCLUCxN6JSu3'`.
 Also, we are using `fakestoreapi.com` to get products information to display.
