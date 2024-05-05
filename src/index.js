@@ -8,6 +8,7 @@ import {FavoritesProvider} from "./context/FavoritesContext";
 import {AuthProvider} from "./context/AuthContext";
 import {CartProvider} from "./context/CartContext";
 import ProductsPage from "./pages/ProductsPage";
+import ProductPage from "./pages/ProductPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -19,6 +20,10 @@ const router = createBrowserRouter(
             <Route
                 element={<ProductsPage/>}
                 path="/products"
+            />
+            <Route
+                element={<ProductPage/>}
+                path="/product/:id"
             />
         </>
     ));
