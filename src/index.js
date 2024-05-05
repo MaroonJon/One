@@ -10,6 +10,8 @@ import {CartProvider} from "./context/CartContext";
 import ProductsPage from "./pages/ProductsPage";
 import ProductPage from "./pages/ProductPage";
 import SearchPage from "./pages/SearchPage";
+import CartPage from "./pages/CartPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -29,6 +31,14 @@ const router = createBrowserRouter(
             <Route
                 element={<SearchPage/>}
                 path="/search/:keyword"
+            />
+            <Route
+                element={<CartPage/>}
+                path="/cart"
+            />
+            <Route
+                element={<CheckoutPage/>}
+                path="/checkout"
             />
         </>
     ));
