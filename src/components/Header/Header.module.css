@@ -1,0 +1,155 @@
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    height: 720px;
+    background-color: #f0f0f0;
+    background-image: url('../../images/HomePage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.smallHeader {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 30px;
+    background: #e63946;
+    height: 30px;
+}
+
+.header>div,
+.smallHeader>div {
+    /*width: 33.3%;*/
+    flex: 1;
+}
+
+.header>div:nth-child(2),
+.smallHeader>div:nth-child(2) {
+    text-align: center;
+}
+
+.header>div:nth-child(3),
+.smallHeader>div:nth-child(3) {
+    text-align: right;
+}
+
+.brandName {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.brandName>a {
+    text-decoration: none;
+}
+
+
+.menu {
+    margin-top: 3px;
+    margin-left: 30px;
+}
+
+.searchbarAndMenu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+
+.searchBox {
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.1, 0.2);
+    overflow: hidden;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.searchbarIcon {
+    position: absolute;
+    top: 6px;
+    right: 7px;
+}
+
+.searchBoxInput {
+    border: none;
+    border-radius: 20px;
+    width: 170px;
+    height: 30px;
+    padding: 0 10px;
+    outline: none;
+    background-color: transparent;
+    font-size: 14px;
+    color: #333;
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.searchBoxInput:focus {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.shoppingCartLogo a {
+    margin-right: 35px;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+}
+
+.shoppingCartCount {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    right: -19px;
+}
+
+.sidemenu {
+    position: fixed;
+    top: 0;
+    left: -350px;
+    z-index: 1000;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    transition-duration: 0.5s;
+}
+
+.sidemenuContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.closeButton {
+    position: absolute;
+    top: 0;
+    right: -43px;
+    background: white;
+    padding: 10px;
+}
+
+.sidebarMenu {
+    list-style: none;
+}
+
+.sidebarMenu a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 340px;
+    }
+}
