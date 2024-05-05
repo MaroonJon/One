@@ -1,0 +1,48 @@
+.footer {
+    background: #1d3557;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding: 10px 40px;
+    color: white;
+    align-content: center;
+}
+
+.footerMenu {
+    width: 33%;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.footerMenu a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.copyRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.copyRight>div {
+    flex: 1;
+}
+
+.copyRight>div:nth-child(2) {
+    text-align: center;
+}
+
+.copyRight>div:nth-child(3) {
+    text-align: right;
+}
+
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+}
