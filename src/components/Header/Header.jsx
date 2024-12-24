@@ -23,7 +23,6 @@ const Header = ({ isHomePage = false }) => {
     };
 
     const handleSearch = () => {
-        console.log('searching for ', searchText)
         navigate(`/search/${searchText}`)
     }
 

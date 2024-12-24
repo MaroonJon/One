@@ -1,5 +1,6 @@
 import React from 'react';
 import { useCart } from '../../context/CartContext';
+import GenericButton from './GenericButton';
 import styles from './AddToCartButton.module.css';
 
 function AddToCartButton({ itemId, itemTitle, itemPrice, itemImage }) {
@@ -25,7 +26,9 @@ function AddToCartButton({ itemId, itemTitle, itemPrice, itemImage }) {
     };
 
     return (
-        <button onClick={addToCart} className={styles.AddToCartButton}>Add to cart</button>
+        <GenericButton onClick={addToCart} className={styles.AddToCartButton}>
+            Add to cart
+        </GenericButton>
     );
 }
 

@@ -1,67 +1,58 @@
-import { useState, useEffect } from 'react'
-
-import Header from '../components/Header/Header.jsx';
-import Footer from "../components/Footer/Footer.jsx";
+import { useState, useEffect } from 'react';
 import ProductList from "../components/ProdductList/ProductList.jsx";
+import { getProducts } from '../utils/apiService';
+import { filterAndSortProducts } from '../utils/productUtils';
 
 function ProductsPage() {
-    const [allProducts, setAllProducts] = useState([])
-    const [filteredProducts, setFilteredProducts] = useState([])
-    const [filter, setFilter] = useState('noFilter')
+    const [allProducts, setAllProducts] = useState([]);
+    const [filteredProducts, setFilteredProducts] = useState([]);
+    const [filter, setFilter] = useState('noFilter');
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
-        async function getProducts() {
-            let response = await fetch('https://fakestoreapi.com/products')
-            response = await response.json()
-            if (response) {
-                setAllProducts(response)
-                setFilteredProducts(response)
+        async function fetchProducts() {
+            setLoading(true);
+            setError(null);
+            try {
+                const products = await getProducts();
+                if (products) {
+                    setAllProducts(products);
+                    setFilteredProducts(products);
+                }
+            } catch (error) {
+                setError('Failed to fetch products');
+            } finally {
+                setLoading(false);
             }
         }
-        getProducts()
-    }, [])
+        fetchProducts();
+    }, []);
 
     const handleFilter = (filter) => {
-        setFilter(filter)
-    }
+        setFilter(filter);
+    };
 
     useEffect(() => {
         if (filter === 'noFilter') {
             setFilteredProducts(allProducts);
-            return;
+        } else {
+            const newList = filterAndSortProducts(allProducts, filter);
+            setFilteredProducts(newList);
         }
-
-        let newList = [...allProducts];
-
-        if (filter === 'cheapest') {
-            newList.sort((a, b) => a.price - b.price);
-        } else if (filter === 'expensive') {
-            newList.sort((a, b) => b.price - a.price);
-        } else if (filter === 'newest') {
-            newList.sort((a, b) => b.id - a.id);
-        } else if (filter === 'oldest') {
-            newList.sort((a, b) => a.id - b.id);
-        }
-
-        setFilteredProducts(newList);
     }, [filter, allProducts]);
 
     return (
-        <div>
-            <Header isHomePage={false} />
-            <main>
-                <ul className="filterButtons">
-                    <li><button type="button" onClick={() => { handleFilter('cheapest') }}>Cheapest Price</button></li>
-                    <li><button type="button" onClick={() => { handleFilter('expensive') }}>Most expensive</button></li>
-                    <li><button type="button" onClick={() => { handleFilter('newest') }}>Newest</button></li>
-                    <li><button type="button" onClick={() => { handleFilter('oldest') }}>Oldest</button></li>
-                </ul>
+        <>
+            <ul className="filterButtons">
+                <li><button type="button" onClick={() => { handleFilter('cheapest') }}>Cheapest Price</button></li>
+                <li><button type="button" onClick={() => { handleFilter('expensive') }}>Most Expensive</button></li>
+                <li><button type="button" onClick={() => { handleFilter('newest') }}>Newest</button></li>
+                <li><button type="button" onClick={() => { handleFilter('oldest') }}>Oldest</button></li>
+            </ul>
 
-                {filteredProducts && <ProductList products={filteredProducts} />}
-            </main>
-            <Footer />
-        </div>
-
+            {loading ? <p>Loading...</p> : error ? <p>{error}</p> : <ProductList products={filteredProducts} />}
+        </>
     );
 }
 

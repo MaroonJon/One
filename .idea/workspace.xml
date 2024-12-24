@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="82233527-ce75-4a49-aa82-cd4fa582ff94" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Buttons/GenericButton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/apiService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/authService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/productUtils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/one.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/one.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Views/CheckoutDetail/CheckoutDetail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/CheckoutDetail/CheckoutDetail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/AddToCartButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/AddToCartButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Buttons/HeartButton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Buttons/HeartButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CartItem/CartItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Product/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/context/AuthContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/context/AuthContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/AboutUsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/AboutUsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CartPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CartPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/CheckoutPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CheckoutPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ContactPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ContactPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/IndexPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/IndexPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProductPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProductPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProductsPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProductsPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProtectedRoutes/ProfilePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProtectedRoutes/ProfilePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SearchPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SearchPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SignupPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SignupPage.jsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2m3y0wOA4i8SAgqwXlqZpIVsFUs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Node.js.CheckoutDetail.jsx.executor": "Run",
+    "Node.js.CheckoutPage.jsx.executor": "Debug",
+    "Node.js.productUtils.js.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-WS-241.14494.235" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82233527-ce75-4a49-aa82-cd4fa582ff94" name="Changes" comment="" />
+      <created>1726319334631</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726319334631</updated>
+      <workItem from="1726319335700" duration="7442000" />
+      <workItem from="1730060492489" duration="336000" />
+      <workItem from="1734964443814" duration="844000" />
+      <workItem from="1734967728305" duration="140000" />
+      <workItem from="1734972840659" duration="9795000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

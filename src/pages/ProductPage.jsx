@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom';
 
-import Header from '../components/Header/Header.jsx';
-import Footer from "../components/Footer/Footer.jsx";
 import ProductDetail from '../Views/ProductDetail/ProductDetail.jsx';
 
 function ProductPage({ }) {
@@ -21,14 +19,9 @@ function ProductPage({ }) {
     }, [])
 
     return (
-        <div>
-            <Header isHomePage={false} />
-            <main>
-                {productDetailData && <ProductDetail data={productDetailData} />}
-            </main>
-            <Footer />
-        </div>
-
+        <>
+            {productDetailData && <ProductDetail data={productDetailData} />}
+        </>
     );
 }
 

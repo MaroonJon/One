@@ -38,7 +38,7 @@ function CartItem({ id, title, image, price, quantity, noButton = false }) {
             <div className={styles.cartItemContainer}>
                 <div>
                     <a href={productDetailPageUrl}>
-                        <img src={image} className={styles.productImage} />
+                        <img src={image} className={styles.productImage} alt={`${title} photo`} />
                     </a>
                 </div>
                 <div className={styles.productInfoContainer}>

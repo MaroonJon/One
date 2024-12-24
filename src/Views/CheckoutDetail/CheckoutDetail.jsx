@@ -47,8 +47,8 @@ function CheckoutDetail() {
 
 
             {cart.length > 0 && <div className={styles.deliveryAndTotalInfo}>
-                <p>Delivery cost is {deliveryCost}</p>
-                {discountValue > 0 && <p>Discount: {discountValue} - <button onClick={handleRemoveDiscount}>remove discount</button></p>}
+                <p>Delivery cost: {deliveryCost} Euros</p>
+                {discountValue > 0 && <p>Discount: {discountValue} - <button type='button' onClick={handleRemoveDiscount}>remove discount</button></p>}
                 <p>total cost: {(totalCost - discountValue).toFixed(2)}</p>
 
                 <button type="button" className={styles.checkoutButton}>Pay</button>

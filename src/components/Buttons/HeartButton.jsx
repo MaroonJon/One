@@ -1,6 +1,7 @@
 import React from 'react';
 import { useFavorites } from '../../context/FavoritesContext';
 import { LiaHeart, LiaHeartSolid } from "react-icons/lia";
+import GenericButton from './GenericButton';
 import styles from "./AddToCartButton.module.css";
 
 function HeartButton({ itemId, itemName }) {
@@ -19,11 +20,9 @@ function HeartButton({ itemId, itemName }) {
     };
 
     return (
-        <div>
-            <button onClick={addToFavorites} className={styles.FavButton}>
-                {isLiked ? <LiaHeartSolid size={20} className={styles.favLogoLiked} /> : <LiaHeart size={20} />}
-            </button>
-        </div>
+        <GenericButton onClick={addToFavorites} className={styles.FavButton}>
+            {isLiked ? <LiaHeartSolid size={20} className={styles.favLogoLiked} /> : <LiaHeart size={20} />}
+        </GenericButton>
     );
 }
 
